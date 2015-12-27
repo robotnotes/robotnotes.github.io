@@ -1,4 +1,4 @@
-var disqus_shortname = 'robotnotes';			//Short Name of disqus, this parameter is for disqus comment box.
+var disqus_shortname = 'diaosi2008';			//Short Name of disqus, this parameter is for disqus comment box.
 var hostbase = 'http://robotnotes.github.io';		//The absolute root address of your blog without '/' in the end.
 var githubname = 'robotnotes';						//Your username of GitHub.
 var repos = 'robotnotes.github.io';					//Name of repository that contains your blog.
