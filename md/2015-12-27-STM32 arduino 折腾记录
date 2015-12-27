@@ -1,0 +1,15 @@
+STM32 arduino 折腾记录
+======
+
+STM32F103C8T9  Blue pill x 1
+折腾目标
+
+#### 刷bootloader
+1. BOOT0置HIGH，BOOT1置LOW
+1. 接USBUART，PA9是USART1_TX，PA10是USART1_RX
+1. clone https://github.com/rogerclarkmelbourne/STM32duino-bootloader/tree/master/STM32F1
+1. 根据板子LED的位置，选择刷哪个flash，Blue pill的版本刷PC13
+
+#### Arduino IDE
+1. 确保IDE版本小于1.6
+1. Arduino_STM32/STM32F1 拷贝到 Arduino IDE 的 hardware/arduino/stm32下
