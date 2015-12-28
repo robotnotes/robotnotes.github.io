@@ -10,7 +10,7 @@ js
 `name=value; expires=EXPIRATION_TIME; path=DOMAIN_PATH; domain=DOMAIN_NAME; secure`
 最好给name和value编码一下
 
-```
+```javascript
 document.cookie = encodeURLComponent("name") + "=" +
                   encodeURLComponent("测试")
 ```
@@ -21,7 +21,7 @@ document.cookie = encodeURLComponent("name") + "=" +
 1. sessionStorage 会话数据，只保存到浏览器关闭。
 1. globalStorage 可以跨会话存储数据，但要指定DOMAIN
 
-    ```
+    ```javascript
     globalStorage['wrox.com'].name = "test" 
     var name = globalStorage['wrox.com'].name
     ```
@@ -36,7 +36,7 @@ document.cookie = encodeURLComponent("name") + "=" +
 所有的操作都是异步的，需要覆写指定的回调函数
 大致用法
 
-```
+```javascript
 var request,  database
 
 request = indexedDB.open("DBNAME")
