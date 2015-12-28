@@ -9,6 +9,7 @@ js
 使用`document.cookie`来设置cookie的时候，不会覆盖cookie，除非设置的cookie的名字已经存在，格式如同
 `name=value; expires=EXPIRATION_TIME; path=DOMAIN_PATH; domain=DOMAIN_NAME; secure`
 最好给name和value编码一下
+
 ```
 document.cookie = encodeURLComponent("name") + "=" +
                   encodeURLComponent("测试")
@@ -19,6 +20,7 @@ document.cookie = encodeURLComponent("name") + "=" +
 1. Storage 类型(方法：`clear(), getItem(name), key(index), removeItem(name), setItem(name,value))` 只能存取字符串
 1. sessionStorage 会话数据，只保存到浏览器关闭。
 1. globalStorage 可以跨会话存储数据，但要指定DOMAIN
+
     ```
     globalStorage['wrox.com'].name = "test" 
     var name = globalStorage['wrox.com'].name
@@ -33,6 +35,7 @@ document.cookie = encodeURLComponent("name") + "=" +
 ## IndexedDB
 所有的操作都是异步的，需要覆写指定的回调函数
 大致用法
+
 ```
 var request,  database
 
@@ -47,9 +50,11 @@ request.onsuccess = function(event) {
 setVersion() 设置版本号（一般`if (database.version != 1.0)`') 这样的办法先测试一次有没有设置过版本，若没有，调用 setVersion
 
 #### 创建数据
+
 ```
 var store = db.createObjectStore("NAME", {keyPath: "KEY_NAME"})
 ```
+
 可以认为Store就是表，keyPath是键名（全局唯一）
 
 ```
@@ -76,27 +81,34 @@ var transaction = database.transaction()
 ```
 var transaction = database.transaction("STORE_OBJECT_NAME"
 ```
+
 这样保证只加载 STORE_OBJECT_NAME 存储空间的数据。
+
 ```
 var transaction = database.transaction(["users", "blogs"])
 ```
+
 也可以这样访问多个
 
 如果要加其他权限，如写，需要传入第二个参数
+
 ```
 var transaction = database.transaction("users", window.IDBTransaction || window.webkitIDBTransaction)
 ```
+
 这样挂载的是读写
 
 取得了事务的索引后，用`objectStore()`方法传入存储空间名称，可以访问特定的存储空间。就可以用 `add(), put(), get(), delete(), clear()`等方法，用法同上。
 
 事务的事件处理程序
+
 ```
 transaction.onerror -> 整个事务被取消了
 transaction.oncomplete -> 整个事务成功完成 
 ```
 
 事务游标
+
 ```
 cursor = store.openCursor()
 ```
