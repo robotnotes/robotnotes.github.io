@@ -114,7 +114,7 @@ function loadXMLDoc(url){
 				}
 				else if(xmlhttp.status==404) {
 					document.title = 'Not Found - '+sitetitle;
-					content.innerHTML = '<img src="images/despicable_me.png" />';
+					content.innerHTML = '<img src="images/miku.jpg" />';
 				}
 				else {
 					document.title = 'Technology Problem - '+sitetitle;
