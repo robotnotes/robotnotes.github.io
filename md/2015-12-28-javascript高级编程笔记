@@ -25,6 +25,7 @@ document.cookie = encodeURLComponent("name") + "=" +
     globalStorage['wrox.com'].name = "test" 
     var name = globalStorage['wrox.com'].name
     ```
+    
     这样所有wrox.com和其子域都可以访问，如果用的是非顶级域名，则只能在指定域下访问。
 1. localStorage 也就是自动加了域名的 globalStorage
 
@@ -47,17 +48,18 @@ request.onsuccess = function(event) {
 	database = event.target.result;
 }
 ```
+
 setVersion() 设置版本号（一般`if (database.version != 1.0)`') 这样的办法先测试一次有没有设置过版本，若没有，调用 setVersion
 
 #### 创建数据
 
-```
+```javascript
 var store = db.createObjectStore("NAME", {keyPath: "KEY_NAME"})
 ```
 
 可以认为Store就是表，keyPath是键名（全局唯一）
 
-```
+```javascript
 request = store.add(XXX)
 
 request.onerror = function()
@@ -72,19 +74,19 @@ request.onsuccess = function() {
 
 #### 事务
 
-```
+```javascript
 var transaction = database.transaction()
 ```
 
 没有参数的时候只能通过事务来读取数据库保存的对象
 
-```
+```javascript
 var transaction = database.transaction("STORE_OBJECT_NAME"
 ```
 
 这样保证只加载 STORE_OBJECT_NAME 存储空间的数据。
 
-```
+```javascript
 var transaction = database.transaction(["users", "blogs"])
 ```
 
