@@ -45,6 +45,8 @@ function main(){
 		document.title = sitetitle;
 		if(postList){
 			showlist(postList);
+			document.getElementById('main-content').style.width = '690px';
+			document.getElementById('sidebar').style.display ='';
 		}
 		else{
 			pending = true;
@@ -111,6 +113,10 @@ function loadXMLDoc(url){
 					if(dis){
 						dis.style.display = 'block';
 					}
+				// hide right column
+				document.getElementById('main-content').style.width = '100%';
+				document.getElementById('sidebar').style.display = 'none';
+
 				}
 				else if(xmlhttp.status==404) {
 					document.title = 'Not Found - '+sitetitle;
