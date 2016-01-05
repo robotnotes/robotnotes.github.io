@@ -1,0 +1,13 @@
+Python snippets
+======
+#### 作为装饰器的类
+```python
+class Decorator(object):
+
+	def __call__(self, obj):
+		pass
+	
+	def __get__(self, obj, objtype):
+		return functools.partial(self.__call__, obj)
+	
+```
