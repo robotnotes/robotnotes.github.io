@@ -100,7 +100,7 @@ postlist {
   display: block;
   font-family: Arial, sans-serif;
   padding: 10px;
-  background: url(../images/bg_item.png) bottom;
+  /* background: url(../images/bg_item.png) bottom; */
   border-bottom: 1px #e2e2e2 solid;
 }
 
