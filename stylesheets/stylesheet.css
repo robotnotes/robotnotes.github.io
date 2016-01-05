@@ -184,7 +184,7 @@ postlist a:hover {
   color: gray;
   text-align: right;
   margin-bottom: 20px;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 aside#sidebar {
