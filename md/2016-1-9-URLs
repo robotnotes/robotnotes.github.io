@@ -1,0 +1,69 @@
+* Grammer Zoo: http://slebok.github.io/zoo/index.html
+* STM32Arduino: http://www.stm32duino.com/
+
+#### openwrt 翻墙相关
+* http://sourceforge.net/projects/openwrt-dist/
+* http://hong.im/2014/07/08/use-ipset-with-shadowsocks-on-openwrt/
+* http://dl.kyonli.com/shadowsocks/
+
+#### JS
+* https://github.com/winjs/winjs
+
+#### Web2.0 Hacking
+* XSS'OR
+	常用其中加解密与代码生成
+	http://evilcos.me/lab/xssor/ User Link
+	源码：https://github.com/evilcos/xssor User Link
+* XSSEE 3.0 Beta
+	Monyer开发的，加解密最好用神器
+	http://evilcos.me/lab/xssee/ User Link
+* Online JavaScript beautifier
+	JavaScript美化工具，分析JavaScript常用
+	http://jsbeautifier.org/ User Link
+* BeEF
+	The Browser Exploitation Framework
+	http://beefproject.com/ User Link
+
+#### HTTP代理
+* Fiddler: Web调试代理工具
+* Burp Suite: HTTP代理，还有爬虫、漏洞扫描、渗透、爆破等功能
+* mitmproxy: MITM proxy
+漏洞扫描
+* AWVS
+* Nmap
+
+#### 漏洞利用
+* sqlmap
+* Metasploit
+* Hydra: 爆破
+
+* Sebug + ZoomEye
+* Sebug类似的: https://www.exploit-db.com/
+* ZoomEye类似的: https://www.shodan.io/
+
+Pycoder's Weekly：http://pycoders.com/archive/
+* Hacker News：https://news.ycombinator.com/
+* Startup News：http://news.dbanotes.net/
+* InfoQ：http://www.infoq.com/cn User Link
+* FreeBuf：http://www.freebuf.com/
+* WooYun：http://drops.wooyun.org/
+* 深蓝阅读：http://bluereader.org/
+
+##### 漏洞相关
+* http://sebug.net/rss.xml
+* https://www.exploit-db.com/rss.xml
+* https://rss.packetstormsecurity.com
+* http://www.wooyun.org/feeds/public
+* http://bluereader.org/
+
+#### 威胁情报
+
+* https://github.com/kbandla/APTnotes
+* i春秋：http://www.ichunqiu.com
+* https://pentesterlab.com
+* Sebug: http://sebug.net
+* Beebeeto: http://www.beebeeto.com
+* Bugscan: http://www.bugscan.net
+* Tangscan: http://www.tangscan.com
+
+* http://www.pentoo.ch/download/ 安全渗透测试工具
