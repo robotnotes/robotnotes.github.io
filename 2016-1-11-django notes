@@ -1,0 +1,11 @@
+Django notes
+======
+
+Postgres aggregate (django >= 1.9)
+```
+from django.db.models.expressions import RawSQL
+
+Model.objects.annotate(
+    val=RawSQL("((attrs->>%s)::numeric)", (json_field_key,))
+).aggregate(min=Min('val')
+```
