@@ -3,3 +3,6 @@
 
 ## db
 [asyncio-pg](https://github.com/MagicStack/asyncpg)
+
+## QA
+[pycqa](https://github.com/PyCQA)
